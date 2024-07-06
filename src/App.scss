@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+// Variables
+$darkThemeSecBack: 8E8E93;
+
+// Chats Dashboard
+.dash {
+    background: grey;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    // Chats Section
+    .chats-section {
+        max-width: 480px;
+    }
+    .light-chats-section {
+        background: white;
+    }
+    .dark-chats-section {
+        background: $darkThemeSecBack;
+    }
+}
