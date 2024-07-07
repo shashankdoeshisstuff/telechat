@@ -10,21 +10,30 @@ import { useChatData } from './ChatContext';
 function App() {
   const { chatData, theme, setTheme, loading, error } = useChatData();
 
-  console.log(chatData);
+  // Storing Chats
+  const chatsInbox = chatData?.data?.data || []; 
 
   return (
     <div>
       {/* Dashboard */}
       <main className='dash'>
-        {/* Chats */}
+        {/* Inbox Chats */}
         <section className={`chats-section ${theme}-chats-section`}>
-          <ul>
-            <li>chat</li>
-            <li>chat</li>
-            <li>chat</li>
-            <li>chat</li>
-            <li>chat</li>
-          </ul>
+          {chatsInbox.map(chat => (
+            <div className='inbox-chats'>
+              <div className='chat-img'>SB</div>
+              <div className='inbox-chat-detail'>
+                <div className='inbox-chat-name-status'>
+                  <span >{chat.creator.name}</span>
+                  <div className='inbox-status'>
+                    <span>//</span>
+                    <span>May 12</span>
+                  </div>
+                </div>
+                <span>last message</span>
+              </div>
+            </div>
+          ))}
         </section>
         {/* Chat */}
         <section className='chat-section'>
