@@ -1,6 +1,7 @@
 # Telechat
 
 ### This project is in under development!
+visit [https://shashankdoeshisstuff.github.io/telechat/]
 
 This is a messagin web applicaton like telegram, this application is based on the Beyondchat Docs requirements [https://docs.google.com/document/d/1VdXsXE55J2Kcc8vE4Ht75Piay1oC7P3s1P6gfb6yifk/edit], API used is provided in the docs.
 
