@@ -1,0 +1,48 @@
+.opened-chat {
+    display: grid;
+    grid-template-rows: 56px 1fr;
+    overflow: hidden;
+
+    .chat-info {
+        border-bottom:  1px solid #DADCE0;
+    }
+
+    .messages-section {
+        overflow: hidden;
+        display: grid;
+        justify-items: center;
+       
+        .messages-box {
+            overflow: hidden;
+            height: 100%;
+            max-width: 840px;
+            padding: 0 16px 0 16px;
+            display: grid;
+            grid-template-rows: 1fr 140px ;
+            
+            .messages-container {
+                overflow-y: auto;
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 8px;
+        
+                .message-bubble {
+                    border-radius: 1em;
+                    padding: 8px;
+                    max-width: 70%;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                }
+        
+                // message bubble type
+                .your-message {
+                    background: gray;
+                    align-self: flex-end;
+                }
+                .senders-message {
+                    background: white;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}

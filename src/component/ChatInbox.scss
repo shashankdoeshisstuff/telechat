@@ -1,0 +1,60 @@
+@use '../styles/variables';
+
+// Chats Section
+.chats-inbox-section {
+    border-right: 1px solid #DADCE0;
+    width: 480px;
+    padding: 8px;
+    cursor: pointer;
+    height: 100vh;
+    overflow-y: auto;
+
+
+    // Inbox Chat Component
+    .inbox-chats {
+        display: grid;
+        grid-template-columns: 54px auto;
+        gap: 8px;
+        padding: 18px;
+        border-radius: 16px;
+
+        .chat-img {
+            background: orangered;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .inbox-chat-detail {
+            display: grid;
+            gap: 6px;
+            
+            .inbox-chat-name-status {
+                display: grid;
+                grid-template-columns: auto auto;
+
+                .inbox-status {
+                    justify-self: end;
+                }
+
+                .inbox-chat-card-name {
+                    font-weight: 500;
+                    color: black;
+                }
+                .card-msg-time {
+                    color: gray;
+                    font-size: 12px;
+                }
+            }
+            .inbox-chat-last-msg {
+                color: gray;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}

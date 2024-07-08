@@ -1,0 +1,22 @@
+// Variables
+
+// Theme Variables
+$light-theme: (
+    theme-background: #FFFFFF,
+    gray:  #F4F4F5,
+    inbox-last-seen: #A0A2A6,
+    inbox-active-chat: #3390EC,
+    // active chat or messages theme
+    messages-theme-background-color: #fffb7d,
+    messages-theme-background-image: linear-gradient(315deg, #fffb7d 20%, #85FFBD 50%, #FFFB7D 99%),
+);
+
+$dark-theme: (
+    theme-background: #212121,
+    gray:  #2C2C2C,
+    inbox-last-seen: #494B4E,
+    inbox-active-chat: #766AC8,
+    // active chat or messages theme
+    messages-theme-background-color: black,
+    messages-theme-background-image: none,
+)

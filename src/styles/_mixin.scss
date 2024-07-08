@@ -1,0 +1,47 @@
+// Mixin
+
+// Theme Switching
+@mixin theme($theme-map) {
+    .chats-inbox-section {
+        background: map-get($theme-map, theme-background);
+
+        .card-msg-sender {
+            color: map-get($theme-map, inbox-active-chat);
+        }
+
+        .inbox-chats-hover:hover {
+            background: map-get($theme-map, gray);
+        }
+
+        // For active chat Backgorund
+        .inbox-active-chat {
+            background: map-get($theme-map, inbox-active-chat);
+            
+            .inbox-chat-detail {
+                .inbox-chat-card-name {
+                    color: white;
+                }
+
+                .card-msg-time {
+                    color: white;
+                }
+
+                .inbox-chat-last-msg {
+                    color: white;
+
+                    .card-msg-sender {
+                        color: white;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // For Active Chats or message seciton
+    .messages-section {
+        background-color: map-get($theme-map, messages-theme-background-color);
+        background-image: map-get($theme-map, messages-theme-background-image);
+
+    }
+}
